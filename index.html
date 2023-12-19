@@ -27,8 +27,8 @@
       }
 
       .section {
-        display: flex; 
-        justify-content: center; 
+        display: flex;
+        justify-content: center;
         margin-top: 1rem;
       }
 
@@ -48,6 +48,9 @@
         font-size: 14px;
       }
 
+      .error-trace {
+        display: none;
+      }
     </style>
     <title>Error</title>
   </head>
@@ -63,6 +66,7 @@
         <p>Estamos presentando una falla de conexión.</p>
         <p>Por favor, inténtalo más tarde.</p>
       </div>
+      <div class="error-trace">::CLOUDFLARE_ERROR_500S_BOX::</div>
       <div class="section">
         <img src="./assets/plugs-img.svg" alt="plugs" />
       </div>
