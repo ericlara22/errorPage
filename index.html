@@ -1,23 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div style="display: flex; justify-content: center;">
-        <img src="./assets/warning-icon.svg" alt="Warning">
-    </div>
-    <div style="display: flex; justify-content: center;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background: #777777f7;
+      }
+
+      .container {
+        margin: 10vh auto; /* Adjust the vertical margin as needed */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: azure;
+        border-radius: 15px;
+        border: 1px solid #ddd;
+        backdrop-filter: blur(
+          5px
+        ); /* Use backdrop-filter instead of background: blur */
+        padding: 20px;
+        text-align: center;
+      }
+
+      .section {
+        display: flex; 
+        justify-content: center; 
+        margin-top: 1rem;
+      }
+
+      h1 {
+        font-family: Lato, sans-serif;
+        font-size: 24px;
+        color: #585858;
+      }
+
+      p {
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        color: #585858;
+        font-family: Lato, sans-serif;
+        font-size: 14px;
+      }
+
+    </style>
+    <title>Error</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="section">
+        <img src="./assets/warning-icon.svg" alt="Warning" />
+      </div>
+      <div class="section">
         <h1>Lo sentimos</h1>
-    </div>
-    <div style="display: flex; justify-content: center;">
+      </div>
+      <div>
         <p>Estamos presentando una falla de conexión.</p>
         <p>Por favor, inténtalo más tarde.</p>
+      </div>
+      <div class="section">
+        <img src="./assets/plugs-img.svg" alt="plugs" />
+      </div>
     </div>
-    <div style="display: flex; justify-content: center;">
-        <img src="./assets/plugs-img.svg" alt="plugs">
-    </div>
-</body>
+  </body>
 </html>
